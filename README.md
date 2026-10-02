@@ -11,8 +11,8 @@ InfinityPacer 的 Muvyo 第三方插件仓库。在 Muvyo「第三方插件 → 
 本仓库是开源插件仓库，`src/<插件ID>/` 源码和签名产物（`index.json`、`plugins/`）一起提交。协议与签名流程见 [muvyo-addon-guide](https://github.com/thsrite/muvyo-addon-guide)。
 
 - 第一次克隆后执行 `git config core.hooksPath .githooks` 和 `git config muvyo.publishSource true`。
-- 测试用 `npm test`（node 加载插件并模拟 `mv`），以及 `npm run test:quickjs`（QuickJS 冒烟，需要 `brew install quickjs`）。测试不放在插件目录里，因为插件目录只允许 manifest、入口 JS 和 README。
-- 签名需要把 `muvyo-signing.json` 和 `mv_addon.py` 放在仓库根目录，两者都已被 `.gitignore` 忽略。签名命令是 `python3 mv_addon.py sign ./src/<插件ID> --no-encrypt -o .`。
+- 测试用 `npm test`（node 加载插件并模拟 `mv`），以及 `npm run test:quickjs`（QuickJS 冒烟，需要 `brew install quickjs`）。测试不放在插件目录里，因为插件目录只允许 manifest、入口 JS、README 和 manifest 里 `icon` 声明的图标。
+- 签名需要把 `muvyo-signing.json` 和 `mv_addon.py` 放在仓库根目录，两者都已被 `.gitignore` 忽略。带图标的插件要用新版 Muvyo「开发者」页下载的签名脚本，并先 `pip3 install cryptography Pillow`，旧脚本不会把图标打进发布文件。签名命令是 `python3 mv_addon.py sign ./src/<插件ID> --no-encrypt -o .`。
 - 发布按 `.claude/skills/muvyo-addon-publish` 的流程进行，推送前需要确认。
 
 ## 许可

@@ -4,26 +4,27 @@
   "certificate": {
    "aud": "mediavault-addon-author",
    "version": 1,
-   "serial": 6,
+   "serial": 7,
    "author_id": "gh-160988576",
    "author": "InfinityPacer",
    "namespace": "infinitypacer",
-   "public_key": "bYpJh9DWDzI2dKm0ZXsJC3IfJ5jYwjnp2uiuIIJbc9E=",
-   "issued_at": 1790931506,
-   "expires_at": 1822467506,
+   "public_key": "tfKtCcW7BswM1hvH2gu2d2jS4EqVP6y0RmzSJZHfI3c=",
+   "issued_at": 1790939621,
+   "expires_at": 1822475621,
    "content_key": "CEeLrhooOYJfdwVRX2WDOPATyRY2DqHXzcvBf1zwVHo=",
    "content_key_version": 1
   },
-  "signature": "8qS9UADWptyEqSZOgNhL5kZe48RqlsLXYwH8++4UtJ+KWidI2sPuA7d+QD2y8AGiYTxtWX5f11uuQxCOUpxbAg=="
+  "signature": "kexmjzIgwYXyfDVB112Dx/JS2xsWGUNiBD5Ap3mi7f51Pr5wHF0ijU7d3GCqrmvbLdPskysu7it5RfvOmfzPBw=="
  },
  "payload": {
   "plugin_id": "infinitypacer.smartrename",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": {
    "README.md": "f0210a953b46a837d91f26eaf93b5cd9ae168ca90089793a288c647a94838621",
+   "icon.png": "72d9d3475b567565b3b9d0830182b3a9288e84d26ab3724bf7fce0f3fa0f8e96",
    "main.js": "c842d99258750ae0071f4aa89097374b4029055c3ae4bb94640a2dcc4b45cb9a",
-   "manifest.json": "cd0c6a1e1185ad871799ce6c7e2d09e863b95f8dc646545daf54ad999b2b2c9f"
+   "manifest.json": "017619a415cb0748258d2f9acf99bea523de3f7a2177313eb80b7c7d8860c573"
   }
  },
- "signature": "/0IBKDGPy/qEdsuqJXPbi44cpNNYy6zR1dN9x7QZuFFoP6KIQjdCgvRwnQUCEgo9RhHtyZMOBrvvOTajumFaBg=="
+ "signature": "X/BTIcvGx2ESwT5UGy3KQHx63sEhN634pVm0rE9B/QS1I205XK8i+NE/p67+XEW2t9t1Zmpl5dzmQzvraK/qDA=="
 }

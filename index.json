@@ -1,11 +1,11 @@
 {
  "name": "InfinityPacer 的插件",
- "sequence": 4,
+ "sequence": 5,
  "plugins": [
   {
    "id": "infinitypacer.smartrename",
    "name": "智能重命名",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "description": "在 Muvyo 内置重命名的基础上，按字段统一分隔符、按二级分类或 TMDB 编号切换模板，并在渲染后执行正则替换词。不联网，不操作文件。",
    "author": "InfinityPacer",
    "path": "plugins/infinitypacer.smartrename",

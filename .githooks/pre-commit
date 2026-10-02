@@ -34,7 +34,9 @@ while IFS= read -r f; do
     plugins/*/*)
       case "$base" in
         manifest.json|README.md|signature.json|encrypted.json|*.js) ;;
-        *) say "✗ ${f}：插件目录里只能有 manifest.json、入口 JS 或 encrypted.json、README.md、signature.json"
+        # manifest 的 icon 声明的图标，签名后随包发布
+        *.png|*.jpg|*.jpeg|*.webp) ;;
+        *) say "✗ ${f}：插件目录里只能有 manifest.json、入口 JS 或 encrypted.json、README.md、signature.json、图标"
            fail=1 ;;
       esac ;;
   esac
