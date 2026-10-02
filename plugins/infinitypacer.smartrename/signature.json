@@ -1,0 +1,29 @@
+{
+ "version": 1,
+ "certificate": {
+  "certificate": {
+   "aud": "mediavault-addon-author",
+   "version": 1,
+   "serial": 6,
+   "author_id": "gh-160988576",
+   "author": "InfinityPacer",
+   "namespace": "infinitypacer",
+   "public_key": "bYpJh9DWDzI2dKm0ZXsJC3IfJ5jYwjnp2uiuIIJbc9E=",
+   "issued_at": 1790931506,
+   "expires_at": 1822467506,
+   "content_key": "CEeLrhooOYJfdwVRX2WDOPATyRY2DqHXzcvBf1zwVHo=",
+   "content_key_version": 1
+  },
+  "signature": "8qS9UADWptyEqSZOgNhL5kZe48RqlsLXYwH8++4UtJ+KWidI2sPuA7d+QD2y8AGiYTxtWX5f11uuQxCOUpxbAg=="
+ },
+ "payload": {
+  "plugin_id": "infinitypacer.smartrename",
+  "version": "0.0.1",
+  "files": {
+   "README.md": "f0210a953b46a837d91f26eaf93b5cd9ae168ca90089793a288c647a94838621",
+   "main.js": "c842d99258750ae0071f4aa89097374b4029055c3ae4bb94640a2dcc4b45cb9a",
+   "manifest.json": "b195c1006be32d15522ac7c8d9bf6a8332ea2621b59ffb86878205d44ef860e0"
+  }
+ },
+ "signature": "tlFKm4IQw16pZifMa6aBGJXOW+youJ5xU3Qy4a5VLfGOHLDjLTX6uZYSYZeLn3u97s6qqWI00g3GWdMcvNv5DQ=="
+}

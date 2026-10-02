@@ -1,0 +1,10 @@
+{
+  "name": "muvyo-addons",
+  "private": true,
+  "description": "InfinityPacer 的 Muvyo 第三方插件仓库，只用于本地测试，不发布到 npm",
+  "type": "module",
+  "scripts": {
+    "test": "node --test 'tests/*.test.mjs'",
+    "test:quickjs": "qjs --std tests/quickjs-smoke.js src/infinitypacer.smartrename/main.js"
+  }
+}

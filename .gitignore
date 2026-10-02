@@ -1,0 +1,11 @@
+# 本仓库是开源插件仓库，src/ 源码与签名产物（index.json + plugins/）一起提交
+
+# 签名凭据里有签名私钥，绝不能提交
+muvyo-signing.json
+
+# 签名脚本从 Muvyo 开发者页下载，不必放进仓库
+mv_addon.py
+
+.DS_Store
+__pycache__/
+node_modules/
