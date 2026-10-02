@@ -2,13 +2,13 @@
   "api": 1,
   "id": "infinitypacer.smartrename",
   "name": "智能重命名",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "InfinityPacer",
   "description": "在 Muvyo 内置重命名的基础上，按字段统一分隔符、按二级分类或 TMDB 编号切换模板，并在渲染后执行正则替换词。不联网，不操作文件。",
   "entry": "main.js",
   "permissions": {"domains": []},
   "config": [
-    {"key": "separator", "label": "默认分隔符", "type": "text", "default": ".", "placeholder": ".", "help": "把所选字段内部的空白换成这个分隔符，例如 TrueHD 7.1 Atmos → TrueHD.7.1.Atmos。留空则不处理字段。"},
+    {"key": "separator", "label": "默认分隔符", "type": "text", "default": ".", "help": "把所选字段内部的空白换成这个分隔符，例如 TrueHD 7.1 Atmos → TrueHD.7.1.Atmos。留空则不处理字段。"},
     {"key": "separator_types", "label": "分隔符适用范围", "type": "multiselect", "help": "从未保存过本项时默认处理 edition、effect、resourceType、videoFormat、videoCodec、audioCodec。片名类字段只改展示名，不影响 TMDB 识别。", "options": [
       {"value": "edition", "label": "版本 edition"},
       {"value": "effect", "label": "特效 effect"},

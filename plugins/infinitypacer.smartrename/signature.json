@@ -18,12 +18,12 @@
  },
  "payload": {
   "plugin_id": "infinitypacer.smartrename",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": {
    "README.md": "f0210a953b46a837d91f26eaf93b5cd9ae168ca90089793a288c647a94838621",
    "main.js": "c842d99258750ae0071f4aa89097374b4029055c3ae4bb94640a2dcc4b45cb9a",
-   "manifest.json": "b195c1006be32d15522ac7c8d9bf6a8332ea2621b59ffb86878205d44ef860e0"
+   "manifest.json": "cd0c6a1e1185ad871799ce6c7e2d09e863b95f8dc646545daf54ad999b2b2c9f"
   }
  },
- "signature": "tlFKm4IQw16pZifMa6aBGJXOW+youJ5xU3Qy4a5VLfGOHLDjLTX6uZYSYZeLn3u97s6qqWI00g3GWdMcvNv5DQ=="
+ "signature": "/0IBKDGPy/qEdsuqJXPbi44cpNNYy6zR1dN9x7QZuFFoP6KIQjdCgvRwnQUCEgo9RhHtyZMOBrvvOTajumFaBg=="
 }
