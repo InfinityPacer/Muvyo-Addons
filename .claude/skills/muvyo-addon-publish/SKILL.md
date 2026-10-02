@@ -57,6 +57,15 @@ python3 mv_addon.py sign ./src/<插件ID> -o .
 python3 mv_addon.py verify ./plugins/<插件ID>
 ```
 
+本仓库已启用仓库索引签名。插件签名完成后，还要签署索引并验签，仓库签名命令会递增索引序号。
+
+```sh
+python3 scripts/repository_signature.py sign
+python3 scripts/repository_signature.py verify
+```
+
+仓库公钥固定，作者证书重新领取后仍须使用原仓库密钥，通过 `--credential <原凭据路径>` 指定。不要替换 `index.json` 的公钥来绕过密钥不匹配错误。
+
 签名失败按提示处理：
 - 「插件 ID 必须以你的命名空间开头」：改 manifest 的 `id`，同时把 `src/` 下的目录名改成一致。
 - 「作者证书已过期」「这张证书不支持加密」：请用户在 Muvyo 开发者页重新领取证书，替换 `muvyo-signing.json`。
@@ -65,11 +74,11 @@ python3 mv_addon.py verify ./plugins/<插件ID>
 ### 4. 只暂存签名产物
 
 ```sh
-git add -A index.json plugins/<插件ID>
+git add -A index.json index.json.sig plugins/<插件ID>
 git status --short
 ```
 
-确认暂存区里只有 `index.json` 和 `plugins/` 下的文件；出现 `src/`、`muvyo-signing.json`、`*.pem` 或 `mv_addon.py` 就 `git restore --staged <文件>` 撤出，并检查 `.gitignore`。不要用 `git add -A` / `git add .`。
+普通产物发布确认暂存区里只有 `index.json`、`index.json.sig` 和 `plugins/` 下的文件；出现 `src/`、`muvyo-signing.json`、`*.pem` 或 `mv_addon.py` 就 `git restore --staged <文件>` 撤出，并检查 `.gitignore`。开源源码遵循上面的显式授权规则，发布工具或文档改动按任务范围单独核对。不要用 `git add -A` / `git add .`。
 
 ### 5. 提交
 

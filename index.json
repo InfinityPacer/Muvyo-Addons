@@ -1,6 +1,6 @@
 {
  "name": "InfinityPacer 的插件",
- "sequence": 5,
+ "sequence": 6,
  "plugins": [
   {
    "id": "infinitypacer.smartrename",
@@ -11,5 +11,6 @@
    "path": "plugins/infinitypacer.smartrename",
    "api": 1
   }
- ]
+ ],
+ "public_key": "tfKtCcW7BswM1hvH2gu2d2jS4EqVP6y0RmzSJZHfI3c="
 }
